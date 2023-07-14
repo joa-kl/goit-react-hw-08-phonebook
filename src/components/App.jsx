@@ -1,17 +1,21 @@
+import { HomePage } from 'pages/HomePage';
 import css from './App.module.css';
 import ContactForm  from "./ContactForm/ContactForm";
 import { ContactList } from "./ContactList/ContactList";
 import { Filter } from "./Filter/Filter";
+import { Route, Routes } from 'react-router-dom';
+import { Layout } from './Layout/Layout';
 
-export const App = () => {
+  const App = () => {
 
-    return (
-      <div className={css.container}>
-        <h1>Phonebook</h1>
-        <ContactForm />
-        <h2> Contacts</h2>
-        <Filter  />
-        <ContactList/>
+  return (
+      <div>
+        <Routes>
+          <Route path="/" element={<Layout/>} > 
+            <Route index element={<HomePage />} />
+            {/* <Route path="/" element={<HomePage />} /> */}
+          </Route>
+        </Routes>
       </div>
     );
 };
