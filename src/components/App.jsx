@@ -12,6 +12,8 @@ import { useEffect } from 'react';
 import { PrivateRoute } from './PrivateRoute/PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute/RestrictedRoute';
 import { TasksPage } from 'pages/TasksPage';
+import { useAuth } from 'hooks/useAuth';
+import { refreshUser } from 'redux/auth/operations';
 
 export const App = () => {
   const dispatch = useDispatch();
