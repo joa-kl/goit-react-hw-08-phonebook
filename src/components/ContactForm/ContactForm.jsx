@@ -2,8 +2,8 @@ import css from "./ContactForm.module.css"
 import { useDispatch, useSelector } from "react-redux";
 import { nanoid } from "nanoid";
 import { Notify } from "notiflix";
-import { selectContacts } from "redux/filter/selectors";
-import { addContact } from "redux/operationsOld";
+import { selectContacts } from "../../redux/filter/selectors";
+import { addContact } from "../../redux/contacts/operations";
 
 const ContactForm = () => {
     const dispatch = useDispatch();
