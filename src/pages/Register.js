@@ -1,7 +1,13 @@
+import { RegisterForm } from "components/RegisterForm/RegisterForm"
+import { Helmet } from "react-helmet-async"
+
 export const RegisterPage = () => {
     return (
         <div>
-            This is register form!
+            <Helmet>
+                <title>Registration</title>
+            </Helmet>
+            <RegisterForm />
         </div>
     )
 }
