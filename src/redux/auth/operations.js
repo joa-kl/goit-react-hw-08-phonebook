@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import { registrationFailureEmailInUseNotification } from 'utils/notifications';
 
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
 
@@ -26,6 +27,9 @@ export const register = createAsyncThunk(
             setAuthHeader(res.data.token);
             return res.data;
         } catch (error) {
+            if (error.response.data.code === 11000) {
+                registrationFailureEmailInUseNotification();
+            }
             return thunkAPI.rejectWithValue(error.message);
         }
     }
@@ -82,7 +86,7 @@ export const refreshUser = createAsyncThunk(
         try {
             // If there is a token, add it to the HTTP header and perform the request
             setAuthHeader(persistedToken);
-            const res = await axios.get('/users/me');
+            const res = await axios.get('/users/contacts');
             return res.data;
         } catch (error) {
             return thunkAPI.rejectWithValue(error.message);
