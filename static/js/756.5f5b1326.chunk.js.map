@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/756.5f5b1326.chunk.js","mappings":"qMAAaA,EAAe,WACxB,OACI,mDAIP,C","sources":["pages/Register.js"],"sourcesContent":["export const RegisterPage = () => {\n    return (\n        <div>\n            This is register form!\n        </div>\n    )\n}"],"names":["RegisterPage"],"sourceRoot":""}
