@@ -11,7 +11,7 @@ const ContactForm = () => {
 
     const handleFormSubmit = event => {
         event.preventDefault();
-
+      
         const contact = {
             id: nanoid(),
             name: event.currentTarget.elements.name.value,
