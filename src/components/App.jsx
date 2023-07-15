@@ -18,7 +18,7 @@ import { refreshUser } from 'redux/auth/operations';
 const HomePage = lazy(() => import('../pages/Home'));
 const RegisterPage = lazy(() => import('../pages/Register'));
 const LoginPage = lazy(() => import('../pages/Login'));
-const PhonebookPage = lazy(() => import('../pages/Tasks'));
+const PhonebookPage = lazy(() => import('../pages/Phonebook'));
 
 export const App = () => {
   const dispatch = useDispatch();
