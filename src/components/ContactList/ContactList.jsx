@@ -6,7 +6,7 @@ import { selectError, selectFilteredContacts, selectIsLoading } from 'redux/filt
 import {deleteContact, fetchContacts } from 'redux/operationsOld';
 import { useEffect } from 'react';
 
-export const ContactList = () => {
+const ContactList = () => {
 
   const filteredContacts = useSelector(selectFilteredContacts)
   const error = useSelector(selectError);
@@ -44,7 +44,10 @@ export const ContactList = () => {
         ))}
       </ul>
     </div>
-)};
+  )
+};
+
+export default ContactList;
 
 ContactList.propTypes = {
   contacts: propTypes.arrayOf(

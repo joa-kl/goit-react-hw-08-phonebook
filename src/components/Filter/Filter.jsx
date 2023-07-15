@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectFilter } from 'redux/filter/selectors';
 import { setFilter } from 'redux/filter/filterSlice';
 
-export const Filter = () => {
+const Filter = () => {
 
   const dispatch = useDispatch();
   const filterValue = useSelector(selectFilter);
@@ -20,5 +20,8 @@ export const Filter = () => {
         onChange={event => dispatch(setFilter(event.target.value.trim()))}
       />
     </div>
-)};
+  )
+};
+
+export default Filter;
 

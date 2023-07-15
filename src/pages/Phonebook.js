@@ -1,6 +1,6 @@
 import ContactForm from "components/ContactForm/ContactForm";
-import { ContactList } from "components/ContactList/ContactList";
-import { Filter } from "components/Filter/Filter";
+import ContactList from "components/ContactList/ContactList";
+import Filter from "components/Filter/Filter";
 import css from '../components/App.module.css';
 import { Helmet } from "react-helmet-async";
 import { useDispatch, useSelector } from "react-redux";
@@ -8,7 +8,7 @@ import { selectError, selectIsLoading } from "redux/filter/selectors";
 import { useEffect } from "react";
 import { fetchContacts } from "redux/operationsOld";
 
-export const PhonebookPage = () => {
+const Phonebook = () => {
     const dispatch = useDispatch();
     const isLoading = useSelector(selectIsLoading);
     const error = useSelector(selectError);
@@ -30,4 +30,6 @@ export const PhonebookPage = () => {
             {!!isLoading && !error && <p>Loading....</p>}
         </div>
     )
-}
+};
+
+export default Phonebook;

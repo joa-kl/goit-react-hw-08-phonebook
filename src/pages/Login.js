@@ -1,7 +1,7 @@
-import { LoginForm } from "components/LoginForm/LoginForm";
+import LoginForm from "components/LoginForm/LoginForm";
 import { Helmet } from "react-helmet-async";
 
-export const LoginPage = () => {
+const Login = () => {
     return (
         <div>
             <Helmet>
@@ -11,3 +11,5 @@ export const LoginPage = () => {
         </div>
     )
 }
+
+export default Login;

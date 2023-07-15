@@ -4,7 +4,7 @@
 // import { ContactList } from "./ContactList/ContactList";
 // import { Filter } from "./Filter/Filter";
 import { Route, Routes } from 'react-router-dom';
-import { Layout } from './Layout/Layout';
+import Layout  from './Layout/Layout';
 // import { LoginPage } from 'pages/Login';
 // import { RegisterPage } from 'pages/Register';
 import { useDispatch } from 'react-redux';
@@ -20,7 +20,7 @@ const RegisterPage = lazy(() => import('../pages/Register'));
 const LoginPage = lazy(() => import('../pages/Login'));
 const PhonebookPage = lazy(() => import('../pages/Phonebook'));
 
-export const App = () => {
+const App = () => {
   const dispatch = useDispatch();
   const { isRefreshing } = useAuth();
 
@@ -55,8 +55,9 @@ export const App = () => {
       </Route>
     </Routes>
   );
-
 };
+
+export default App;
 
     
   // return (
@@ -72,4 +73,4 @@ export const App = () => {
   //   );
 
 
-export default App;
+
