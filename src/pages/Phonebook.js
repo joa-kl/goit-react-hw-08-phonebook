@@ -1,12 +1,12 @@
-import ContactForm from "components/ContactForm/ContactForm";
-import ContactList from "components/ContactList/ContactList";
-import Filter from "components/Filter/Filter";
+import ContactForm from "../components/ContactForm/ContactForm";
+import ContactList from "../components/ContactList/ContactList";
+import Filter from "../components/Filter/Filter";
 import css from '../components/App.module.css';
 import { Helmet } from "react-helmet-async";
 import { useDispatch, useSelector } from "react-redux";
-import { selectError, selectIsLoading } from "redux/filter/selectors";
+import { selectError, selectIsLoading } from "../redux/filter/selectors";
 import { useEffect } from "react";
-import { fetchContacts } from "redux/operationsOld";
+import { fetchContacts } from "../redux/contacts/operations";
 
 const Phonebook = () => {
     const dispatch = useDispatch();
