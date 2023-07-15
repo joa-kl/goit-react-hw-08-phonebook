@@ -4,9 +4,9 @@ import { Helmet } from "react-helmet-async";
 const Login = () => {
     return (
         <div>
-            <Helmet>
+            {/* <Helmet>
                 <title>Login</title>
-            </Helmet>
+            </Helmet> */}
             <LoginForm />
         </div>
     )

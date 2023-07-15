@@ -3,7 +3,7 @@ import css from './ContactList.module.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { Notify } from 'notiflix';
 import { selectError, selectFilteredContacts, selectIsLoading } from '../../redux/filter/selectors';
-import {deleteContact, fetchContacts } from 'redux/operationsOld';
+import {deleteContact, fetchContacts } from '../../redux/contacts/operations';
 import { useEffect } from 'react';
 
 const ContactList = () => {
