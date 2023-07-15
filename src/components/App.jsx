@@ -41,19 +41,19 @@ const App = () => {
         <Route
           path="register"
           element={
-            <RestrictedRoute redirectTo="/phonebook" element={<Register />} />
+            <RestrictedRoute redirectTo="/phonebook" component={<Register />} />
           }
         />
         <Route
           path="login"
           element={
-            <RestrictedRoute redirectTo="/phonebook" element={<Login />} />
+            <RestrictedRoute redirectTo="/phonebook" component={<Login />} />
           }
         />
         <Route
           path="phonebook"
           element={
-            <PrivateRoute redirectTo="/login" element={<Phonebook />} />
+            <PrivateRoute redirectTo="/login" component={<Phonebook />} />
           }
         />
       </Route>

@@ -4,9 +4,9 @@ import { Helmet } from "react-helmet-async"
 const Register = () => {
     return (
         <div>
-            <Helmet>
+            {/* <Helmet>
                 <title>Registration</title>
-            </Helmet>
+            </Helmet> */}
             <RegisterForm />
         </div>
     )
