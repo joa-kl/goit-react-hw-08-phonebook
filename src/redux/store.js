@@ -1,15 +1,3 @@
-// import { configureStore } from "@reduxjs/toolkit";
-// import { contactsReducer } from "./contactSlice";
-// import { filterReducer } from "./filterSlice";
-
-// export const store = configureStore({
-//     reducer: {
-//         contacts: contactsReducer,
-//         filter: filterReducer,
-//     },
-// });
-
-// export default store;
 
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import {
