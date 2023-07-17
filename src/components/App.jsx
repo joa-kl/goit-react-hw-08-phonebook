@@ -24,6 +24,22 @@ import Phonebook from 'pages/Phonebook';
 // const LoginPage = lazy(() => import('../pages/Login'));
 // const PhonebookPage = lazy(() => import('../pages/Phonebook'));
 
+// 1. Import the extendTheme function
+import { extendTheme, ChakraProvider } from '@chakra-ui/react'
+
+// 2. Extend the theme to include custom colors, fonts, etc
+const colors = {
+  brand: {
+    900: '#1a365d',
+    800: '#153e75',
+    700: '#2a69ac',
+    600: '#2a09ac',
+    500: '#1a69ac',
+  },
+}
+
+export const theme = extendTheme({ colors })
+
 const App = () => {
   const dispatch = useDispatch();
   const { isRefreshing } = useAuth();
