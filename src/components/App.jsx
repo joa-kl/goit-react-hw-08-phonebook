@@ -15,7 +15,7 @@ import { PrivateRoute } from './PrivateRoute/PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute/RestrictedRoute';
 import useAuth from '../hooks/useAuth';
 import { refreshUser } from '../redux/auth/operations';
-import Phonebook from 'pages/Phonebook';
+import Phonebook from 'pages/Phonebook/Phonebook';
 import css from "./App.module.css"
 // import { Box } from '@chakra-ui/react';
 

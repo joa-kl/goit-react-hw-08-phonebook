@@ -1,11 +1,11 @@
-import ContactForm from "../components/ContactForm/ContactForm";
-import ContactList from "../components/ContactList/ContactList";
-import Filter from "../components/Filter/Filter";
+import ContactForm from "../../components/ContactForm/ContactForm";
+import ContactList from "../../components/ContactList/ContactList";
+import Filter from "../../components/Filter/Filter";
 import css from './Phonebook.module.css';
 import { useDispatch, useSelector } from "react-redux";
-import { selectError, selectIsLoading } from "../redux/filter/selectors";
+import { selectError, selectIsLoading } from "../../redux/filter/selectors";
 import { useEffect } from "react";
-import { fetchContacts } from "../redux/contacts/operations";
+import { fetchContacts } from "../../redux/contacts/operations";
 
 const Phonebook = () => {
     const dispatch = useDispatch();
@@ -18,9 +18,6 @@ const Phonebook = () => {
 
     return (
         <div className={css.container}>
-            {/* <Helmet>
-                <title>Phonebook</title>
-            </Helmet> */}
             <h1 className={css.title}>Phonebook</h1>
             <ContactForm />
             <h2 className={css.title}> Contacts</h2>
