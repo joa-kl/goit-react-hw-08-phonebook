@@ -4,14 +4,16 @@
 
 const styles = {
     container: {
-        minHeight: 'calc(100vh - 50px)',
+        // height: '100%',
         display: 'flex',
         alignItems: 'center',
+        paddingTop: '100px',
         justifyContent: 'center',
+        // backgroundColor: 'teal'
     },
     title: {
         fontWeight: 500,
-        fontSize: 48,
+        fontSize: 40,
         textAlign: 'center',
     },
 };

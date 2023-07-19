@@ -18,6 +18,7 @@ import { RestrictedRoute } from './RestrictedRoute/RestrictedRoute';
 import useAuth from '../hooks/useAuth';
 import { refreshUser } from '../redux/auth/operations';
 import Phonebook from 'pages/Phonebook';
+import css from "./App.module.css"
 
 // const HomePage = lazy(() => import('../pages/Home'));
 // const RegisterPage = lazy(() => import('../pages/Register'));
@@ -25,20 +26,20 @@ import Phonebook from 'pages/Phonebook';
 // const PhonebookPage = lazy(() => import('../pages/Phonebook'));
 
 // 1. Import the extendTheme function
-import { extendTheme, ChakraProvider } from '@chakra-ui/react'
+// import { extendTheme, ChakraProvider } from '@chakra-ui/react'
 
 // 2. Extend the theme to include custom colors, fonts, etc
-const colors = {
-  brand: {
-    900: '#1a365d',
-    800: '#153e75',
-    700: '#2a69ac',
-    600: '#2a09ac',
-    500: '#1a69ac',
-  },
-}
+// const colors = {
+//   brand: {
+//     900: '#1a365d',
+//     800: '#153e75',
+//     700: '#2a69ac',
+//     600: '#2a09ac',
+//     500: '#1a69ac',
+//   },
+// }
 
-export const theme = extendTheme({ colors })
+// export const theme = extendTheme({ colors })
 
 const App = () => {
   const dispatch = useDispatch();
@@ -51,6 +52,7 @@ const App = () => {
   return isRefreshing ? (
     <b>Refreshing user...</b>
   ) : (
+      <div className={css.container}>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
@@ -73,7 +75,8 @@ const App = () => {
           }
         />
       </Route>
-    </Routes>
+        </Routes>
+        </div>
   );
 };
 
