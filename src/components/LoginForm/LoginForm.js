@@ -18,25 +18,32 @@ const LoginForm = () => {
     };
 
     return (
-        <form className={css.form}  onSubmit={handleSubmit} autoComplete="off">
-            <label className={css.label} >
-                Email
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter email"
-                    required />
-            </label>
-            <label className={css.label} >
-                Password
-                <input
-                    type="password"
-                    name="password"
-                    placeholder="Enter password"
-                    required />
-            </label>
-            <button type="submit">Log In</button>
-        </form>
+        <>
+        <h2>Log in here</h2>
+        <div className={css.container}>
+            <form className={css.form}  onSubmit={handleSubmit} autoComplete="off">
+                <label className={css.label} >
+                    Email
+                    <input
+                        type="email"
+                        name="email"
+                        className={css.input}
+                        placeholder="Enter email"
+                        required />
+                </label>
+                <label className={css.label} >
+                    Password
+                    <input
+                        type="password"
+                        name="password"
+                        className={css.input}
+                        placeholder="Enter password"
+                        required />
+                </label>
+                <button className={css.button} type="submit">Log In</button>
+            </form>
+            </div>
+        </>
     );
 };
 

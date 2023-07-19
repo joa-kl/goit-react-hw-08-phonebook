@@ -20,7 +20,7 @@ const RegisterForm = () => {
 
     return (
         <>
-        <h2>Registration</h2>
+        <h2>Register here</h2>
         <div className={css.container}>
         <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
             <label className={css.label}>
@@ -30,7 +30,7 @@ const RegisterForm = () => {
                     name="name"
                     className={css.input}
                     placeholder="Enter username"
-                        title="Enter your username. Field required."
+                    title="Enter your username. Field required."
                     required />
             </label>
             <label className={css.label}>
