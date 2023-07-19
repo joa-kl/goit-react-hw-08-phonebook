@@ -45,7 +45,7 @@
     cursor: pointer;
     border: 0;
     font-weight: bold;
-    color: white;
+    color: var(--primary-white);
     width: 100%;
     justify-content: center;
 }
