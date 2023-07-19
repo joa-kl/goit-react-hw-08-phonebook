@@ -6,6 +6,7 @@
 }
 
 .link:active,
-.link:focus{
+.link:focus,
+.link:hover {
     color: white;
 }
