@@ -24,7 +24,7 @@ const RegisterForm = () => {
         <div className={css.container}>
         <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
             <label className={css.label}>
-                Username
+                Username*
                 <input
                     type="text"
                     name="name"
@@ -34,7 +34,7 @@ const RegisterForm = () => {
                     required />
             </label>
             <label className={css.label}>
-                Email
+                Email*
                 <input
                     type="email"
                     name="email"
@@ -44,7 +44,7 @@ const RegisterForm = () => {
                     required />
             </label>
             <label className={css.label}>
-                Password
+                Password*
                 <input
                     type="password"
                     name="password"
@@ -53,7 +53,7 @@ const RegisterForm = () => {
                     pattern=".{7,}"
                     title="Your password must contain at least 7 characters."
                     required />
-            </label>
+            </label>    
             <button className={css.button} type="submit">Register</button>
             </form>
             </div>
