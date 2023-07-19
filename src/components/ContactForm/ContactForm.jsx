@@ -14,8 +14,8 @@ const ContactForm = () => {
       
         const contact = {
             id: nanoid(),
-            name: event.currentTarget.elements.name.value,
-            number: event.currentTarget.elements.number.value,
+            name: event.target.name.value,
+            number: event.target.number.value,
         };
         
         const doesExist = contacts.find(
@@ -24,13 +24,16 @@ const ContactForm = () => {
 
         if (doesExist) {
             return Notify.failure("Contact already exists");
-        }
+        };
 
-        dispatch(
-            addContact(contact),
-            Notify.success("Contact was added to phonebook"),
-            event.currentTarget.reset()
-        );
+        if (!doesExist) {
+            dispatch(
+                addContact(contact),
+                Notify.success("Contact was added to phonebook"),
+                event.currentTarget.reset()
+            );
+
+        }
     }
         
         // useEffect(() => {
