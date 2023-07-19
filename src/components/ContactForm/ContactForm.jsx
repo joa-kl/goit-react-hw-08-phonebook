@@ -40,7 +40,8 @@ const ContactForm = () => {
         // }, [contacts]);
 
 
-        return (
+    return (
+        <div className={css.container}>
             <form onSubmit={handleFormSubmit} className={css.form}>
                 <label className={css.label}>Name</label>
                 <input
@@ -65,6 +66,7 @@ const ContactForm = () => {
 
                 <button type="submit" className={css.button}>Add contact</button>
             </form>
+        </div>
         )
     }
 

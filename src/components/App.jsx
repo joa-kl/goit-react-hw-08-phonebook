@@ -53,7 +53,7 @@ const App = () => {
   return isRefreshing ? (
     <b>Refreshing user...</b>
   ) : (
-      <div className={css.container}>
+    <div className={css.container}>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
