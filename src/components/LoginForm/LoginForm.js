@@ -29,6 +29,7 @@ const LoginForm = () => {
                         name="email"
                         className={css.input}
                         placeholder="Enter email"
+                        title="Enter your email address. Field required."
                         required />
                 </label>
                 <label className={css.label} >
@@ -38,6 +39,7 @@ const LoginForm = () => {
                         name="password"
                         className={css.input}
                         placeholder="Enter password"
+                        title="Your password must contain at least 7 characters."
                         required />
                 </label>
                 <button className={css.button} type="submit">Log In</button>
