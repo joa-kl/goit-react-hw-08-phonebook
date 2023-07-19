@@ -1,3 +1,5 @@
+@import "../../styles/variables.css";
+
 .link {
     text-decoration: none;
     color: black;
@@ -8,5 +10,5 @@
 .link:active,
 .link:focus,
 .link:hover {
-    color: white;
+    color: var(--primary-white);
 }
