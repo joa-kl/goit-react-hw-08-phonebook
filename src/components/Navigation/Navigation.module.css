@@ -10,5 +10,5 @@
 .link:active,
 .link:focus,
 .link:hover {
-    color: var(--primary-white);
+    color: var(--primary-pink);
 }
