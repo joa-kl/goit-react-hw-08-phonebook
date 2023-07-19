@@ -1,3 +1,5 @@
+@import "../../styles/variables.css";
+
 .navUser {
     display: flex;
     display: flex;
@@ -6,7 +8,7 @@
 }
 .userName {
     font-weight: bold;
-    color:#c83664;
+    color:var(--primary-pink);
 }
 
 .button {
@@ -15,16 +17,14 @@
     /* margin-block: 5px; */
     border-radius: 5px;
     /* background-color: rgb(146, 81, 149); */
-    background-color: rgb(1, 91, 91);
+    background-color: var(--primary-teal);
     padding: 5px;
     cursor: pointer;
     border: 0;
     font-weight: bold;
     color: white;
-    /* width: 100%; */
-    /* justify-content: center; */
 }
 
 .button:hover{
-    background-color: #f34079;
+    background-color: var(--primary-pink);
 }
