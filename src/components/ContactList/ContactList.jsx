@@ -26,10 +26,10 @@ const ContactList = () => {
 
   return (
 
-    <div>
+    <div className={css.container}>
       {isLoading && <p>Loading....</p>}
        {error && <p>{error}</p>}
-      <ul>
+      <ul >
         {filteredContacts.map(({id, name, number}) => (
           <li key={id} className={css.contactListItem}>
             {name}: {number}

@@ -32,7 +32,6 @@ const ContactForm = () => {
                 Notify.success("Contact was added to phonebook"),
                 event.currentTarget.reset()
             );
-
         }
     }
         
