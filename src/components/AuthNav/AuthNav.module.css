@@ -8,5 +8,5 @@
 .link:active,
 .link:focus,
 .link:hover {
-    color: white;
+    color: var(--primary-white);
 }

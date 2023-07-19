@@ -18,6 +18,6 @@
 }
 
 .contactListItemBtn:hover {
-    background-color: #f34079;
+    background-color: var(--primary-pink);
     cursor: pointer;
 }
