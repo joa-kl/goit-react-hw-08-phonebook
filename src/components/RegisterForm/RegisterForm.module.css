@@ -7,12 +7,14 @@
     margin: 0 auto;
     /* flex-wrap: wrap; */
     background-color: rgb(1, 91, 91);
+    /* background-image: linear-gradient(135deg, rgb(1, 91, 91) 30%, #d194d1); */
     padding: 20px;
     justify-content: center;
     width: 45%;
     /* filter: blur(2px); */
 
     border-radius: 20px;
+    
 }
 
 .form {
@@ -37,7 +39,7 @@
 }
 
 .input:focus{
-    outline: 2px solid rgb(198, 117, 202);
+    outline: 2px solid #f38dad;
     /* border-radius: 4px; */
     
 }
@@ -45,10 +47,12 @@
 .button {
     margin-block: 5px;
     border-radius: 5px;
-    background-color: rgb(146, 81, 149);
+    background-color: #f34079;
+    /* background-image: linear-gradient(135deg, #f34079 40%, #fc894d); */
     padding: 5px;
     cursor: pointer;
     border: 0;
+    font-weight: bold;
     color: white;
     width: 100%;
     justify-content: center;

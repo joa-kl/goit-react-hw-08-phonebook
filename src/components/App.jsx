@@ -19,6 +19,7 @@ import useAuth from '../hooks/useAuth';
 import { refreshUser } from '../redux/auth/operations';
 import Phonebook from 'pages/Phonebook';
 import css from "./App.module.css"
+import { Box } from '@chakra-ui/react';
 
 // const HomePage = lazy(() => import('../pages/Home'));
 // const RegisterPage = lazy(() => import('../pages/Register'));
@@ -76,7 +77,7 @@ const App = () => {
         />
       </Route>
         </Routes>
-        </div>
+      </div>
   );
 };
 
@@ -93,6 +94,7 @@ export default App;
   //         </Route>
   //       </Routes>
   //     </div>
+        
   //   );
 
 
